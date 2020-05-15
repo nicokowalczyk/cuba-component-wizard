@@ -48,8 +48,8 @@ apply(plugin: 'cuba')
 
 cuba {
     artifact {
-        group = 'de.diedavids.cuba.wizard'
-        version = project.properties['version'].replaceAll('-SNAPSHOT', '')
+        group = 'digital.wandelbar.cuba.wizard'
+        version = '0.1'
         isSnapshot = project.properties['version'].contains('-SNAPSHOT')
     }
     tomcat {
@@ -77,14 +77,13 @@ subprojects {
             desc = 'This application component let\'s you create UI wizards through a specific UI component DSL'
             userOrg = 'mariodavid'
 
-            websiteUrl = 'https://github.com/mariodavid/cuba-component-wizard'
-            issueTrackerUrl = 'https://github.com/mariodavid/cuba-component-wizard/issues'
-            vcsUrl = 'https://github.com/mariodavid/cuba-component-wizard.git'
+            websiteUrl = 'https://github.com/nicokowalczyk/cuba-component-wizard'
+            vcsUrl = 'https://github.com/nicokowalczyk/cuba-component-wizard.git'
 
             licenses = ["Apache-2.0"]
 
             labels = ['wizard', 'cuba-patform', 'cuba-component']
-            githubRepo = 'mariodavid/cuba-component-wizard'
+            githubRepo = 'nicokowalczyk/cuba-component-wizard'
             githubReleaseNotesFile = 'CHANGELOG.md'
 
             version {
